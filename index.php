@@ -59,5 +59,6 @@ if (isset($resData['count']) && $resData['count'] == true) {
 
     echo "Sucesso! Novo Saldo: " . $update;
 } else {
-    echo "Erro ao buscar usuário.";
+    echo "Erro ao buscar usuário. Resposta da API: " . $res;
+    // Se o $res vier vazio, o Render está sendo bloqueado antes de chegar na API.
 }
