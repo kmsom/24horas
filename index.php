@@ -18,11 +18,13 @@ function post_2($url, $ua, $data) {
     return $r;
 }
 
-// Lógica de uma execução
+// Lógica de uma execuçao
+
 $ua = [
-    "host: pixassistindo.thm.app.br",
-    "content-type: application/json; charset=UTF-8",
-    "user-agent: okhttp/4.11.0"
+    "Content-Type: application/json",
+    "Accept: application/json",
+    "User-Agent: okhttp/4.11.0",
+    "Connection: keep-alive"
 ];
 
 // O e-mail deve ser uma variável de ambiente no Render por segurança
